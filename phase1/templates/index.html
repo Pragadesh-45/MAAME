@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MBTI Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* .container {
+			margin: 20px;
+			max-width: 600px;
+			border: 1px solid #ddd;
+			padding: 20px;
+			border-radius: 10px;
+		} */
+
+		.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+		h1, h2 {
+			text-align: center;
+			margin-top: 0;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		p {
+			margin-top: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>MBTI Test</h1>
+		<p>Please answer the following questions to find your MBTI personality type:</p>
+
+		<form action="{{ url_for('result') }}" method="POST">
+			<p>1. I enjoy socializing with groups of people.</p>
+			<label><input type="radio" name="answer1" value="4" required>Strongly agree</label>
+			<label><input type="radio" name="answer1" value="3">Somewhat agree</label>
+			<label><input type="radio" name="answer1" value="2">Somewhat disagree</label>
+			<label><input type="radio" name="answer1" value="1">Strongly disagree</label>
+
+			<p>2. I tend to focus on the present rather than the future.</p>
+			<label><input type="radio" name="answer2" value="1" required>Strongly agree</label>
+			<label><input type="radio" name="answer2" value="2">Somewhat agree</label>
+			<label><input type="radio" name="answer2" value="3">Somewhat disagree</label>
+			<label><input type="radio" name="answer2" value="4">Strongly disagree</label>
+
+			<p>3. I often get lost in my own thoughts.</p>
+			<label><input type="radio" name="answer3" value="4" required>Strongly agree</label>
+			<label><input type="radio" name="answer3" value="3">Somewhat agree</label>
+			<label><input type="radio" name="answer3" value="2">Somewhat disagree</label>
+			<label><input type="radio" name="answer3" value="1">Strongly disagree</label>
+
+			<p>4. I enjoy working on complex problems that have no clear solutions.</p>
+			<label><input type="radio" name="answer4" value="4" required>Strongly agree</label>
+			<label><input type="radio" name="answer4" value="3">Somewhat agree</label>
+			<label><input type="radio" name="answer4" value="2">Somewhat disagree</label>
+			<label><input type="radio" name="answer4" value="1">Strongly disagree</label>
+
+
+		<p>5. I prefer to have a few close friends rather than many acquaintances.</p>
+					<label><input type="radio" name="answer5" value="4" required>Strongly agree</label>
+			<label><input type="radio" name="answer5" value="3">Somewhat agree</label>
+			<label><input type="radio" name="answer5" value="2">Somewhat disagree</label>
+			<label><input type="radio" name="answer5" value="1">Strongly disagree</label>
+
+		<p>6. I enjoy participating in outdoor activities.</p>
+			<label><input type="radio" name="answer6" value="4" required>Strongly agree</label>
+			<label><input type="radio" name="answer6" value="3">Somewhat agree</label>
+			<label><input type="radio" name="answer6" value="2">Somewhat disagree</label>
+			<label><input type="radio" name="answer6" value="1">Strongly disagree</label>
+
+		<p>7. I prefer to have a plan rather than being spontaneous.</p>
+			<label><input type="radio" name="answer7" value="4" required>Strongly agree</label>
+			<label><input type="radio" name="answer7" value="3">Somewhat agree</label>
+			<label><input type="radio" name="answer7" value="2">Somewhat disagree</label>
+			<label><input type="radio" name="answer7" value="1">Strongly disagree</label>
+
+		<p>8. I tend to be more practical than idealistic.</p>
+			<label><input type="radio" name="answer8" value="4" required>Strongly agree</label>
+			<label><input type="radio" name="answer8" value="3">Somewhat agree</label>
+			<label><input type="radio" name="answer8" value="2">Somewhat disagree</label>
+			<label><input type="radio" name="answer8" value="1">Strongly disagree</label>
+
+		<p>9. I enjoy being the center of attention.</p>
+			<label><input type="radio" name="answer9" value="4" required>Strongly agree</label>
+			<label><input type="radio" name="answer9" value="3">Somewhat agree</label>
+			<label><input type="radio" name="answer9" value="2">Somewhat disagree</label>
+			<label><input type="radio" name="answer9" value="1">Strongly disagree</label>
+
+		<p>10. I tend to be more spontaneous than planned.</p>
+			<label><input type="radio" name="answer10" value="4" required>Strongly agree</label>
+			<label><input type="radio" name="answer10" value="3">Somewhat agree</label>
+			<label><input type="radio" name="answer10" value="2">Somewhat disagree</label>
+			<label><input type="radio" name="answer10" value="1">Strongly disagree</label>
+
+		<br><br>
+
+<input type="submit" value="Submit">
+	</form>
+</div>
+
+</body>
+</html>
