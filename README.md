@@ -1,4 +1,4 @@
-# Mental Health Support Web App
+# Mental Aid And Assistance for Non Mediocre Emotion
 
 ## Overview
 The Mental Health Support Web App is a platform designed to provide users with an MBTI (Myers-Briggs Type Indicator) assessment and personalized mental health support. The app utilizes the GPT-3 API for advanced natural language processing capabilities, extracting data models from Reddit to enhance accuracy and relevance.
